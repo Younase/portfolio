@@ -4,9 +4,6 @@
     import github from '$lib/images/github.svg';
 
     let open=0;
-    $: if (open){
-
-        }
 </script>
 
 <header>
@@ -16,10 +13,16 @@
                 <img src={logo} alt="SvelteKit" />
             </a>
 
-            <a on:click={()=>{open = !open}} role="button" class="navbar-burger {open == 1 ? 'is-active':''}" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+            <a on:click={()=>{open = !open}} 
+               role="button" 
+               class="navbar-burger {open == 1 ? 'is-active':''}" 
+               aria-label="menu" 
+               aria-expanded="false" 
+               data-target="navbarBasicExample"
+               >
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
             </a>
         </div>
 
@@ -34,9 +37,9 @@
 
             <div class="navbar-end">
                 <div class="navbar-item">
-                    <a href="https://github.com/sveltejs/kit">
-                        <img src={github} alt="GitHub" />
-                    </a>
+                    <button class="button">
+                        Get in touch
+                    </button>
                 </div>
             </div>
     </nav>
