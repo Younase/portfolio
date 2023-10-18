@@ -2,7 +2,7 @@
 
 </script>
 
-<section class="hero is-medium is-dark" id="home">
+<section class="hero is-fullheight is-dark" id="home">
     <div class="hero-body dark">
         <div class="container is-max-desktop">
             <div class="block">
