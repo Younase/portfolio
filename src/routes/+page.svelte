@@ -3,6 +3,7 @@
 	import About from '../components/organisms/About.svelte';
 	import Projects from '../components/organisms/Projects.svelte';
 	import Experience from '../components/organisms/Experience.svelte';
+	import Contact from '../components/organisms/Contact.svelte';
 </script>
 
 <svelte:head>
@@ -15,6 +16,7 @@
     <About />
     <Projects />
     <Experience />
+    <Contact />
 <style>
     /*
        :global(body){
