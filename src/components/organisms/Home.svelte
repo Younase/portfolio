@@ -3,7 +3,7 @@
 </script>
 
 <section class="hero is-fullheight is-dark" id="home">
-    <div class="hero-body dark">
+    <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="block">
                 <h1 class="title ">

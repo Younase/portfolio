@@ -7,7 +7,7 @@
 </script>
 
 <header>
-    <nav class="navbar is-fixed-top is-dark">
+    <nav class="navbar is-black is-fixed-top">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://kit.svelte.dev">
                 <img src={logo} alt="SvelteKit" />
@@ -48,5 +48,8 @@
 </header>
 
 <style>
-
+    .navbar {
+        background-color: rgba(11,11,11,0.6) !important;
+        backdrop-filter: blur(3px);
+    }
 </style>
