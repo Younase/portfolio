@@ -4,7 +4,7 @@
 <section class="section" id="about">
     <div class="container is-max-desktop">
     <div class="block">
-    <h1 class="title">
+    <h1 class="title has-text-white">
         About Me
     </h1>
     </div>
