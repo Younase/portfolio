@@ -13,14 +13,14 @@
      {#key visible}
      <div class="box" in:fly={{x: 200, delay:200, duration:1000, easing:cubicOut }}>
          <h5 class="title is-5">
-             Skills
+             Technologies
          </h5>
          <div class="tags are-medium">
-             <span class="tag">python</span>
-             <span class="tag">c</span>
-             <span class="tag">bash</span>
-             <span class="tag">java</span>
-             <span class="tag">javascript</span>
+             <span class="tag">Python</span>
+             <span class="tag">C</span>
+             <span class="tag">Bash</span>
+             <span class="tag">Java</span>
+             <span class="tag">Javascript</span>
          </div>
      </div>
      {/key}

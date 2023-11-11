@@ -5,7 +5,7 @@
 
     let visible;
 </script>
-<div class="tile is-8 is-parent" use:viewport
+<div use:viewport
      on:enterViewport={() => visible=1}
      on:exitViewport={() => visible=0}>
      {#key visible}              

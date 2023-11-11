@@ -11,16 +11,13 @@
      on:enterViewport={() => visible=1}
      on:exitViewport={() => visible=0}>
      {#key visible}
-     <div class="box" in:fly={{x: 200, delay:200, duration:1000, easing:cubicOut }}>
+         <div class="box" in:fly={{x: 200, delay:200, duration:1000, easing:cubicOut }}>
          <h5 class="title is-5">
-             Skills
+             Certificates
          </h5>
          <div class="tags are-medium">
-             <span class="tag">python</span>
-             <span class="tag">c</span>
-             <span class="tag">bash</span>
-             <span class="tag">java</span>
-             <span class="tag">javascript</span>
+             <span class="tag">My Certificate Number One</span>
+             <span class="tag">My Certificate Number Two</span>
          </div>
      </div>
      {/key}
