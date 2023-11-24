@@ -1,6 +1,6 @@
 <script>
     import Header from '../components/organisms/Header.svelte';
-    import './styles.css';
+    import './styles.scss';
 </script>
 
 <Header />

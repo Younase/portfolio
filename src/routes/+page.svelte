@@ -20,13 +20,8 @@
     <Experience />
     <Contact />
 </div>
-<style>
+<style lang="scss">
     .wrapper{
         position: relative;
     }
-    /*
-       :global(body){
-        background-color: #F6F6F6;
-       }
-       */
 </style>

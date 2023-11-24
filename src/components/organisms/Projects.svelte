@@ -14,7 +14,7 @@
 <section class="section" id="projects">
     <div class="container is-max-desktop">
         <div class="block">
-            <h1 class="title has-text-white">
+            <h1 class="title">
                 Projects
             </h1>
         </div>

@@ -8,7 +8,7 @@
 <section class="section" id="experience">
     <div class="container">
         <div class="block">
-            <h1 class="title has-text-white">
+            <h1 class="title">
                 Experience
             </h1>
         </div>     

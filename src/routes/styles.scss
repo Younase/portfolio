@@ -1,0 +1,45 @@
+@import 'bulma/sass/utilities/initial-variables.sass';
+
+$scheme-main: hsla(0%,0%,4%,0.6);
+$scheme-main-bis: $black-bis;;
+$scheme-main-ter: $black-ter;
+$scheme-invert: $white;
+$scheme-invert-bis: $white-bis;
+$scheme-invert-ter: $white-ter;
+
+$background: $black-ter;
+
+$border: $grey-dark;
+$border-hover: $grey-dark;
+$border-light: $grey-darker;
+$border-light-hover: $grey-dark;
+
+// Text colors;
+
+$text: $grey-light;
+$text-invert: $grey-darker;
+$text-light: $grey;
+$text-strong: $white;
+
+// Link colors;
+
+$navbar-item-hover-color: $white;
+
+$link-hover: $white;
+$link-hover-border: $grey;
+
+$link-focus: $white;
+$link-focus-border: $white;
+
+$link-active: $white;
+$link-active-border: $grey-light;
+
+@import "../node_modules/bulma/bulma.sass";
+
+html,body{
+    overflow-x: hidden;
+}
+
+.tile>is-child, .card{
+        backdrop-filter: blur(4px);
+}
