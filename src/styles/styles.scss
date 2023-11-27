@@ -40,6 +40,6 @@ html,body{
     overflow-x: hidden;
 }
 
-.tile>is-child, .card{
+.box, .card, .navbar{
         backdrop-filter: blur(4px);
 }
