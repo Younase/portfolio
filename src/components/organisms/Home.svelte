@@ -1,17 +1,18 @@
 <script>
+    import about from "$lib/content/home.json"
 
 </script>
 
-<section class="hero is-fullheight is-dark" id="home">
+<section class="hero is-fullheight" id="home">
     <div class="hero-body">
         <div class="container is-max-desktop">
             <div class="block">
-                <h1 class="title ">
-                    Home
-                </h1>
                 <p class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    {about.header}
                 </p>
+                <h1 class="title">
+                    {about.body}
+                </h1>
             </div>
         </div>
     </div>

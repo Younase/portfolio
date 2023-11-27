@@ -1,14 +1,7 @@
 <script>
     import Projectcard from '../molecules/Projectcard.svelte';
+    import projects from "$lib/content/projects.json";
 
-    let projects =[
-            { name: 'project1', description: 'lorem ipsum dolor', url: 'link.com/p1', image_url: 'link.com/url1' },
-            { name: 'project2', description: 'lorem ipsum dolor', url: 'link.com/p2', image_url: 'link.com/url2' },
-            { name: 'project3', description: 'lorem ipsum dolor', url: 'link.com/p3', image_url: 'link.com/url3' },
-            { name: 'project1', description: 'lorem ipsum dolor', url: 'link.com/p1', image_url: 'link.com/url1' },
-            { name: 'project2', description: 'lorem ipsum dolor', url: 'link.com/p2', image_url: 'link.com/url2' },
-            { name: 'project3', description: 'lorem ipsum dolor', url: 'link.com/p3', image_url: 'link.com/url3' }
-        ]
 </script>
 
 <section class="section" id="projects">
@@ -19,7 +12,7 @@
             </h1>
         </div>
         <div class="columns is-multiline">
-            {#each projects as project, i}
+            {#each projects as project}
                 <Projectcard title={project.name} />
             {/each}
         </div>

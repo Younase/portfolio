@@ -2,6 +2,7 @@
     import viewport from '$lib/useViewportAction';
     import { fly } from 'svelte/transition';
     import { cubicOut } from 'svelte/easing';
+    import skills from '$lib/content/skills.json';
 
     let visible;
 </script>
@@ -16,11 +17,9 @@
              Skills
          </h5>
          <div class="tags are-medium">
-             <span class="tag">python</span>
-             <span class="tag">c</span>
-             <span class="tag">bash</span>
-             <span class="tag">java</span>
-             <span class="tag">javascript</span>
+            {#each skills as skill}
+                <span class="tag">{skill.name}</span>
+            {/each}
          </div>
      </div>
      {/key}

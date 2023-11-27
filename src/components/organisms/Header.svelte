@@ -7,7 +7,7 @@
 </script>
 
 <header>
-    <nav class="navbar is-fixed-top">
+    <nav class="navbar is-fixed-top is-max-desktop">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://kit.svelte.dev">
                 <img src={logo} alt="SvelteKit" />

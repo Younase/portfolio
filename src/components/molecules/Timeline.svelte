@@ -2,69 +2,39 @@
     import viewport from '$lib/useViewportAction';
     import { fly } from 'svelte/transition';
     import { cubicOut } from 'svelte/easing';
+    import experiences from '$lib/content/experiences.json';
 
     let visible;
 </script>
-<div use:viewport
+<div class="tile is-child" use:viewport
      on:enterViewport={() => visible=1}
      on:exitViewport={() => visible=0}>
      {#key visible}              
 
-     <div class="tile is-child box" in:fly={{x: -200, delay:200, duration:1000, easing:cubicOut }}>
+     <div class="box" in:fly={{x: -200, delay:200, duration:1000, easing:cubicOut }}>
          <div class="timeline">
+            {#each experiences as experience}
              <div class="timeline-item content">
                  <h5 class="title is-5 is-marginless">
-                     Education 1
+                     {experience.position}
                  </h5>
-                 <div class="subtitle is-6 is-marginless">
-                     organization 1
-                 </div>
+                 <span class="subtitle is-6 is-marginless">
+                     {experience.company}
+                 </span>
+                 <span class="subtitle is-7 is-marginless">
+                     {experience.timeframe}
+                 </span>
                  <p class="content">
-                 org text, description,...article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd
+                    {experience.description.body}
                  </p>
                  <ul>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
+            {#each experience.description.bulletpoints as bulletpoint}
+                <li>{bulletpoint}</li>
+            {/each}
                  </ul>
              </div>
+            {/each}
 
-             <div class="timeline-item content">
-                 <h5 class="title is-5 is-marginless">
-                     Education 2
-                 </h5>
-                 <div class="subtitle is-6 is-marginless">
-                     organization 2
-                 </div>
-                 <p class="content">
-                 org text, description,...article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd
-                 </p>
-                 <ul>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                 </ul>
-             </div>
-
-             <div class="timeline-item content">
-                 <h5 class="title is-5 is-marginless">
-                     Education 3
-                 </h5>
-                 <div class="subtitle is-6 is-marginless">
-                     organization 3
-                 </div>
-                 <p class="content">
-                 org text, description,...article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd article bodyasdbkhajb kjb jkbkdjabsdba kjbaksdbajsbd
-                 </p>
-                 <ul>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                     <li>asdasdasdasdas</li>
-                 </ul>
-             </div>
 
          </div>
 

@@ -2,6 +2,7 @@
     import viewport from '$lib/useViewportAction';
     import { fly } from 'svelte/transition';
     import { cubicOut } from 'svelte/easing';
+    import technologies from '$lib/content/technologies.json';
 
     let visible;
 </script>
@@ -16,11 +17,9 @@
              Technologies
          </h5>
          <div class="tags are-medium">
-             <span class="tag">Python</span>
-             <span class="tag">C</span>
-             <span class="tag">Bash</span>
-             <span class="tag">Java</span>
-             <span class="tag">Javascript</span>
+            {#each technologies as technology}
+                <span class="tag">{technology.name}</span>
+            {/each}
          </div>
      </div>
      {/key}

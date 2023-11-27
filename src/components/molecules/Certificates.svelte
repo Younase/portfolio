@@ -2,6 +2,7 @@
     import viewport from '$lib/useViewportAction';
     import { fly } from 'svelte/transition';
     import { cubicOut } from 'svelte/easing';
+    import certificates from "$lib/content/certificates.json"
 
     let visible;
 </script>
@@ -16,8 +17,9 @@
              Certificates
          </h5>
          <div class="tags are-medium">
-             <span class="tag">My Certificate Number One</span>
-             <span class="tag">My Certificate Number Two</span>
+            {#each certificates as certificate}
+                <span class="tag">{certificate.name}</span>
+            {/each}
          </div>
      </div>
      {/key}

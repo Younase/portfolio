@@ -1,0 +1,27 @@
+[
+    {
+        "position":"Education 1",
+        "company":"organization 1",
+        "timeframe":"2015-2016",
+        "description":{
+            "body":"description of education 1 with organization 1.",
+            "bulletpoints":[
+                "in charge of task 1 with stat x",
+                "delivered task 2 with stat y"
+            ]
+        }
+    },
+    {
+        "position":"Education 2",
+        "company":"organization 2",
+        "timeframe":"2015-2016",
+        "description":{
+            "body":"description of education 2 with organization 1.",
+            "bulletpoints":[
+                "in charge of task 1 with stat x",
+                "delivered task 2 with stat y"
+            ]
+        }
+    }
+]
+
