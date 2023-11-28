@@ -17,9 +17,9 @@
              Skills
          </h5>
          <div class="tags are-medium">
-            {#each skills as skill}
-                <span class="tag">{skill.name}</span>
-            {/each}
+             {#each skills as skill}
+                 <span class="tag">{skill.name}</span>
+             {/each}
          </div>
      </div>
      {/key}

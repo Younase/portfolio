@@ -27,22 +27,22 @@
                     </h1>
                 </div>
                 <div class="buttons">
-                            <a class="button is-flex is-justify-content-left my-1 is-fullwidth" href="mailto:{contact.email}">
-                                <span class="icon pr-3 ml-0">
-                                    <iconify-icon icon="line-md:email" height="auto"></iconify-icon>
-                                </span>
-                                <span>
-                                    {contact.email}
-                                </span>
-                            </a>
-                            <a class="button is-normal is-flex is-justify-content-left my-1 is-fullwidth" href="{contact.github.link}">
-                                <span class="icon pr-3 ml-0">
-                                    <iconify-icon icon="line-md:github" height="auto"></iconify-icon>
-                                </span>
-                                <span>
-                                    {contact.github.handle}
-                                </span>
-                            </a>
+                    <a class="button is-flex is-justify-content-left my-1 is-fullwidth" href="mailto:{contact.email}">
+                        <span class="icon pr-3 ml-0">
+                            <iconify-icon icon="line-md:email" height="auto"></iconify-icon>
+                        </span>
+                        <span>
+                            {contact.email}
+                        </span>
+                    </a>
+                    <a class="button is-normal is-flex is-justify-content-left my-1 is-fullwidth" href="{contact.github.link}">
+                        <span class="icon pr-3 ml-0">
+                            <iconify-icon icon="line-md:github" height="auto"></iconify-icon>
+                        </span>
+                        <span>
+                            {contact.github.handle}
+                        </span>
+                    </a>
                     <a class="button is-flex is-justify-content-left my-1 is-fullwidth" href="{contact.linkedin.link}">
                         <span class="icon pr-3 ml-0">
                             <iconify-icon icon="line-md:linkedin" height="auto"></iconify-icon>

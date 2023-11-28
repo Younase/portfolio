@@ -17,9 +17,9 @@
              Technologies
          </h5>
          <div class="tags are-medium">
-            {#each technologies as technology}
-                <span class="tag">{technology.name}</span>
-            {/each}
+             {#each technologies as technology}
+                 <span class="tag">{technology.name}</span>
+             {/each}
          </div>
      </div>
      {/key}

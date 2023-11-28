@@ -1,8 +1,8 @@
 <script>
     import Projectcard from '../molecules/Projectcard.svelte';
-import projects from "$lib/content/projects.json";
+    import projects from "$lib/content/projects.json";
 
-let showModals=new Array(projects.length).fill(false);
+    let showModals=new Array(projects.length).fill(false);
 </script>
 
 <section class="section" id="projects">

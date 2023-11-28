@@ -15,15 +15,15 @@
             </a>
 
             <a on:click={()=>{open = !open}} 
-                role="button" 
-                class="navbar-burger {open == 1 ? 'is-active':''}" 
-                aria-label="menu" 
-                aria-expanded="false" 
-                data-target="navbarBasicExample"
-                >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+               role="button" 
+               class="navbar-burger {open == 1 ? 'is-active':''}" 
+               aria-label="menu" 
+               aria-expanded="false" 
+               data-target="navbarBasicExample"
+               >
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
+               <span aria-hidden="true"></span>
             </a>
         </div>
 

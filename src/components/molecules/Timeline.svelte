@@ -13,27 +13,27 @@
 
      <div class="box" in:fly={{x: -200, delay:200, duration:1000, easing:cubicOut }}>
          <div class="timeline">
-            {#each experiences as experience}
-             <div class="timeline-item content">
-                 <h5 class="title is-5 is-marginless">
-                     {experience.position}
-                 </h5>
-                 <span class="subtitle is-6 is-marginless">
-                     {experience.company}
-                 </span>
-                 <span class="subtitle is-7 is-marginless">
-                     {experience.timeframe}
-                 </span>
-                 <p class="content">
-                    {experience.description.body}
-                 </p>
-                 <ul>
-            {#each experience.description.bulletpoints as bulletpoint}
-                <li>{bulletpoint}</li>
-            {/each}
-                 </ul>
-             </div>
-            {/each}
+             {#each experiences as experience}
+                 <div class="timeline-item content">
+                     <h5 class="title is-5 is-marginless">
+                         {experience.position}
+                     </h5>
+                     <span class="subtitle is-6 is-marginless">
+                         {experience.company}
+                     </span>
+                     <span class="subtitle is-7 is-marginless">
+                         {experience.timeframe}
+                     </span>
+                     <p class="content">
+                         {experience.description.body}
+                     </p>
+                     <ul>
+                         {#each experience.description.bulletpoints as bulletpoint}
+                             <li>{bulletpoint}</li>
+                         {/each}
+                     </ul>
+                 </div>
+             {/each}
 
 
          </div>
