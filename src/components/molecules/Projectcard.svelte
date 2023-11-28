@@ -19,7 +19,7 @@
      on:enterViewport={() => visible=1}
      on:exitViewport={() => visible=0}
      >
-     <div class="{is_modal?'modal':''} {showModal?'is-active':''}">
+     <div class="{is_modal?'modal':'is-clickable'} {showModal?'is-active':''}">
          {#if is_modal}
              <div class="modal-background"></div>
          {/if}
