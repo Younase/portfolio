@@ -1,9 +1,10 @@
 <script>
     import { page } from '$app/stores';
-    import logo from '$lib/images/svelte-logo.svg';
-    import github from '$lib/images/github.svg';
+import logo from '$lib/images/svelte-logo.svg';
+import github from '$lib/images/github.svg';
+import 'iconify-icon'
 
-    let open=0;
+let open=0;
 </script>
 
 <header>
@@ -14,15 +15,15 @@
             </a>
 
             <a on:click={()=>{open = !open}} 
-               role="button" 
-               class="navbar-burger {open == 1 ? 'is-active':''}" 
-               aria-label="menu" 
-               aria-expanded="false" 
-               data-target="navbarBasicExample"
-               >
-               <span aria-hidden="true"></span>
-               <span aria-hidden="true"></span>
-               <span aria-hidden="true"></span>
+                role="button" 
+                class="navbar-burger {open == 1 ? 'is-active':''}" 
+                aria-label="menu" 
+                aria-expanded="false" 
+                data-target="navbarBasicExample"
+                >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
 
@@ -36,11 +37,15 @@
             </div>
 
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <button class="button">
-                        Get in touch
-                    </button>
-                </div>
+                <a class="navbar-item" href="mailto:email@example.com">
+                    <iconify-icon icon="line-md:email" height="auto"></iconify-icon>
+                </a>
+                <a class="navbar-item" href="https://www.github.com/younase">
+                    <iconify-icon icon="line-md:github" height="auto"></iconify-icon>
+                </a>
+                <a class="navbar-item" href="https://www.linkedin.com">
+                    <iconify-icon icon="line-md:linkedin" height="auto"></iconify-icon>
+                </a>
             </div>
     </nav>
 
