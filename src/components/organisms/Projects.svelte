@@ -14,12 +14,12 @@
         </div>
         <div class="columns is-multiline">
             {#each projects as project,i}
-                <div class="column is-6" on:click={() => (showModals[i] = true, console.log(showModals))}>
-                    <Projectcard  title={project.name} />
+                <div class="column is-6"> <!-- on:click={() => (showModals[i] = true)}> -->
+                    <Projectcard  title={project.name} link={project.link} img_url={project.img_url} description={project.description}/>
                 </div>
                 <div class="modal" class:is-active={showModals[i]}>
                     <div class="modal-background"></div>
-                    <Projectcard title={project.name} is_modal=true bind:showModal={showModals[i]}/>
+                    <Projectcard title={project.name} link={project.link} img_url={project.img_url} description={project.description} is_modal=true bind:showModal={showModals[i]}/>
                 </div>
             {/each}
         </div>
