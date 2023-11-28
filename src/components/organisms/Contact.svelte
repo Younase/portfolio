@@ -21,13 +21,13 @@
             </div>
             <div class="column is-3">
                 <div class="block">
-                    <h1 class="title is-3">
+                    <h1 class="title is-3 pt-5">
                         Socials
                     </h1>
                 </div>
                 <div class="buttons">
                             <a class="button is-flex is-justify-content-left my-1 is-fullwidth" href="mailto:email@example.com">
-                                <span class="icon px-3">
+                                <span class="icon pr-3 ml-0">
                                     <iconify-icon icon="line-md:email" height="auto"></iconify-icon>
                                 </span>
                                 <span>
@@ -35,7 +35,7 @@
                                 </span>
                             </a>
                             <a class="button is-normal is-flex is-justify-content-left my-1 is-fullwidth" href="https://www.github.com/younase">
-                                <span class="icon px-3">
+                                <span class="icon pr-3 ml-0">
                                     <iconify-icon icon="line-md:github" height="auto"></iconify-icon>
                                 </span>
                                 <span>
