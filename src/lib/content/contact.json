@@ -1,0 +1,11 @@
+{   
+    "email": "email@example.com", 
+    "github": {
+        "handle":"Younase",
+        "link":"https://github.com/younase"
+    },
+    "linkedin": {
+        "handle":"user",
+        "link":"https://www.linkedin.com/user"
+    }
+}

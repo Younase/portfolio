@@ -1,10 +1,10 @@
 <script>
     import { page } from '$app/stores';
-import logo from '$lib/images/svelte-logo.svg';
-import github from '$lib/images/github.svg';
-import 'iconify-icon'
+    import logo from '$lib/images/svelte-logo.svg';
+    import 'iconify-icon'
+    import contact from "$lib/content/contact.json";
 
-let open=0;
+    let open=0;
 </script>
 
 <header>
@@ -37,13 +37,13 @@ let open=0;
             </div>
 
             <div class="navbar-end">
-                <a class="navbar-item" href="mailto:email@example.com">
+                <a class="navbar-item" href="mailto:{contact.email}">
                     <iconify-icon icon="line-md:email" height="auto"></iconify-icon>
                 </a>
-                <a class="navbar-item" href="https://www.github.com/younase">
+                <a class="navbar-item" href="{contact.github.link}">
                     <iconify-icon icon="line-md:github" height="auto"></iconify-icon>
                 </a>
-                <a class="navbar-item" href="https://www.linkedin.com">
+                <a class="navbar-item" href="{contact.linkedin.link}">
                     <iconify-icon icon="line-md:linkedin" height="auto"></iconify-icon>
                 </a>
             </div>
